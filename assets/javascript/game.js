@@ -5,7 +5,7 @@ var wordList = ["hermione", "portkey", "hedwig", "hufflepuff", "sirius", "animag
 var rightWord = [];
 var wrongWord = []
 var underlinedBlanks = [];
-var guessesLeft=10;
+var guessesLeft = 10;
 
 
 var wordBeingGuessed = wordList[Math.floor(Math.random() * wordList.length)];
@@ -33,7 +33,7 @@ console.log(underlinedBlanks)
 document.addEventListener("keypress", (event) => {
     let letters = String.fromCharCode(event.keyCode);
 
-    
+
 
     for (var i = 0; i < wordBeingGuessed.length; i++) {
         if (letters === wordBeingGuessed[i]) {
@@ -65,7 +65,7 @@ document.addEventListener("keypress", (event) => {
         wrongWord.push(letters);
         console.log(wrongWord);
         document.getElementById('wrongGuessesBank').innerHTML = wrongWord;
-        guessesLeft= guessesLeft-1;
+        guessesLeft = guessesLeft - 1;
 
 
     }
@@ -73,13 +73,14 @@ document.addEventListener("keypress", (event) => {
     if (guessesLeft === 0) {
 
         alert("You lost! The word was " + wordBeingGuessed + "!");
+        break
         
 
     }
     if (underlinedBlanks.join('') == wordBeingGuessed) {
 
         alert("Galloping gargoyles, you've done it! The word was " + wordBeingGuessed + "!");
-
+        break
     }
 
 })
