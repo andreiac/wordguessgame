@@ -1,0 +1,23 @@
+h1{
+    font-family: 'Calligraffitti', cursive;
+    color: black;
+    text-shadow: -1px -1px 0 antiquewhite, .15px -.15px 0 antiquewhite, -.15px .15px 0 antiquewhite, .15px .15px 0 antiquewhite;
+
+}
+h2{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: -1px -1px 0 antiquewhite, .05px -.05px 0 antiquewhite, -.05px .05px 0 antiquewhite, .05px .05px 0 antiquewhite;
+
+}
+h3{
+    font-family: 'Amatic SC', cursive;
+}
+h4{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+
+}
