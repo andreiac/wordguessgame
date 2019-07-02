@@ -73,14 +73,12 @@ document.addEventListener("keypress", (event) => {
     if (guessesLeft === 0) {
 
         alert("You lost! The word was " + wordBeingGuessed + "!");
-        break
         
 
     }
     if (underlinedBlanks.join('') == wordBeingGuessed) {
 
         alert("Galloping gargoyles, you've done it! The word was " + wordBeingGuessed + "!");
-        break
     }
 
 })
